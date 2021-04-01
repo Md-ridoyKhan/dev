@@ -5,10 +5,12 @@ responsive mobile area here
 @media screen and (max-width: 1366px){
     /* index.html  */
     /* banner area here   */
-    /* .bannerWrap {
-        background-size: 700px;
-        padding: 200px 0px;
-    } */
+    .bannerAgency-content {
+        /* padding: 200px 0px 166px; */
+    }
+    .bannerWrap {
+        /* background-size: 700px; */
+    }
     .bannerAgency-content .content h2 {
         font-size: 40px;
         padding-bottom: 10px;
@@ -50,7 +52,7 @@ responsive mobile area here
     }
     /* footer area here  */
     .footer-content {
-        margin-bottom: 80px;
+        margin-bottom: 60px;
     }
 }
 /* 767px -md- Medium device area here  */
@@ -117,21 +119,25 @@ responsive mobile area here
 @media screen and (max-width: 576px){
      /* index.html  */
     /* banner area here  */
-    /* .bannerWrap {
-        background-size: 700px;
-        padding: 78px 0px;
+    .bannerWrap {
+        /* background-size: 700px;
+        padding: 78px 0px; */
     }
     .bannerAgency {
-        padding: 0px;
-    } */
-    .bannerAgency-content .content h2 {
+        /* padding: 0px; */
+    }
+    /* .bannerAgency-content .content h2 {
         font-size: 30px;
         padding-bottom: 5px;
         line-height: 38px;
     }
 
-
-
+    .bannerAgency-content {
+        padding: 94px 0px 225px;
+    } */
+    .bannerWrap {
+        padding: 106px 0px;
+    }
     /* service area here  */
     .service-title .title h2 {
         font-size: 26px;
