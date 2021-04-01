@@ -51,6 +51,14 @@ $(document).ready(function(){
         }
         }
     })
+    $('.client-carousel').owlCarousel({
+        items: 1,
+        loop:true,
+        margin:20,
+        autoplay: true,
+        smartSpeed: 1000,
+        nav: false,
+    })
 
     // portfolio index item 
     // $('.port-list').click(function(){

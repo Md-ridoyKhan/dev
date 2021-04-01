@@ -57,7 +57,7 @@
     top: 100%;
     min-width: 180px;
     background: #ffede6;
-    z-index: 1;
+    z-index: 30;
     line-height: 52px;
     padding: 0px 20px 0px;
     -webkit-transform: scaleY(0);
@@ -562,20 +562,20 @@
 .owlArea .graph img{
     width: 1000px;
 }
-.owlArea .owl-title {
+.owl-title {
     padding: 120px 15px 80px;
     max-width: 630px;
     margin: 0 auto;
     text-align: center;
 }
-.owlArea .owl-title p {
-    font-size: 18px;
+.owl-title p {
+    font-size: 24px;
     font-weight: bold;
     text-transform: capitalize;
     letter-spacing: 0px;
     color: #ff845a;
 }
-.owlArea .owl-title h2 {
+.owl-title h2 {
     font-size: 36px;
     font-weight: bold;
     line-height: 50px;
@@ -632,18 +632,18 @@
     color: #fff;
     font-size: 24px;
 }
-.owl-theme .owl-nav.disabled+.owl-dots {
-    margin-top: 50px;
+.our-owl-item .owl-nav.disabled+.owl-dots {
+    margin-top: 32px;
 }
-.owl-theme .owl-dots .owl-dot.active span{
+.our-owl-item .owl-dots .owl-dot.active span{
     background: #ff845a;
     width: 50px;
 }
-.owl-theme .owl-dots .owl-dot span {
+.our-owl-item .owl-dots .owl-dot span {
     width: 30px;
     height: 10px;
     margin: 5px 4px;
-    background: #ff845a;
+    background: #d0d1d4;
     border-radius: 0px;
 }
 /* owl carousel area ends here  */
@@ -659,8 +659,8 @@
 }
 .getArea .graph {
     position: absolute;
-    top: 26%;
-    left: -48px;
+    top: 30%;
+    left: -45px;
     z-index: -1;
 }
 .getArea .graph img{
@@ -788,3 +788,221 @@ footer{
     transform: rotate(360deg);
 }
 /* footer area ends here  */
+
+
+/* about.html */
+/* .banner area here */
+.about-hader{
+    background-color: #fff;
+}
+.banner {
+    max-width: 100%;
+    background: url("../images/overlay/aboutBannerOverlay.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url('../images/graphic/aboutBannerGraaph.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+.banner .banner-content {
+    text-align: center;
+    padding: 160px 0px 170px;
+}
+.banner .banner-content h2 {
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #ff845a;
+    padding-bottom: 16px;
+}
+.banner .banner-content ul li {
+    display: inline;
+}
+.banner .banner-content ul li a {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #2b2e3d;
+}
+.banner .container{
+    position: relative;
+}
+.banner .container .circel {
+    position: absolute;
+    right: -17%;
+    top: 26px;
+    z-index: -1;
+}
+.banner .container .angle {
+    position: absolute;
+    bottom: 26px;
+    right: 0;
+    z-index: -1;
+}
+
+/* meet area here */
+.meet{}
+.meet .card {
+    max-width: 100%;
+    border: none;
+}
+.meet .card img {
+    width: 100%;
+    height: auto;
+}
+.meet .card ul {
+    display: flex;
+    justify-content: center;
+}
+.meet .card ul li {
+    background: #ff845a;
+    margin: 0px 10px;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-top: -22px;
+    overflow: hidden;
+}
+.meet .card ul li:hover a i{
+    color: #2b2e3d;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+.meet .card ul li a i {
+    color: #fff;
+}
+.meet .card .content {
+    text-align: center;
+}
+.meet .card .content h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: capitalize;
+    line-height: 50px;
+    padding-top: 18px;
+}
+.meet .card .content p {
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #ff845a;
+    padding-bottom: 12px;
+}
+
+/* client area here */
+.client{}
+.client-carousel {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.client-carousel .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.client-carousel .item img {
+    width: 100px;
+    height: auto;
+}
+.client-carousel .item .content{
+    text-align: center;
+}
+.client-carousel .item .content h2 {
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 26px;
+    text-transform: capitalize;
+}
+.client-carousel .item .content p {
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 32px;
+}
+.client-carousel .owl-dots .owl-dot span {
+    width: 26px;
+    height: 10px;
+    margin: 5px 4px;
+    background: #d0d1d4;
+    border-radius: 0px;
+}
+.client-carousel .owl-dots .owl-dot.active span {
+    background: #ff845a;
+    width: 40px;
+}
+.client-carousel .owl-nav.disabled+.owl-dots {
+    margin-top: 32px;
+}
+
+/* can area here */
+.can{
+    padding: 120px 0px;
+}
+.can .can-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.can .can-content h2 {
+    font-size: 46px;
+    font-weight: bold;
+    line-height: 60px;
+}
+.can .can-content p {
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 24px;
+}
+.can .can-content button{}
+.can .img{}
+.can .img img{
+    width: 100%;
+    height: auto;
+}
+
+/* Do you area here */
+.do-you{
+    background-color: #ff845a;
+}
+.do-you .jumbotron {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0px;
+    text-align: center;
+}
+.do-you .jumbotron h2{
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 50px;
+}
+.do-you .button{}
+.do-you .button a{
+    background-color: #fdd094;
+    color: #2b2e3d;
+}
+
+
+
+
+
+
+
+

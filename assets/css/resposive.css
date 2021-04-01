@@ -9,7 +9,7 @@ responsive mobile area here
         /* padding: 200px 0px 166px; */
     }
     .bannerWrap {
-        /* background-size: 700px; */
+        background-size: 700px;
     }
     .bannerAgency-content .content h2 {
         font-size: 40px;
@@ -24,10 +24,24 @@ responsive mobile area here
     .youCanWrap > img {
         left: 0;
     }
+    
+    /* about.html */
+    /* .banner  */
+    .banner .container .circel {
+        position: absolute;
+        right: 0;
+    }
 }
 @media screen and (min-width: 1200px){
     .container{
         max-width: 1110px;
+    }
+}
+@media screen and (max-width: 1200px){
+    /* about.index  */
+    /* can  */
+    .can .img {
+        margin-bottom: 80px;
     }
 }
 /* 991px -lg- Large device area here  */
@@ -189,6 +203,19 @@ responsive mobile area here
         padding: 0px 15px;
     }
 
+    /* about.html */
+    /* .banner  */
+    .banner .container img{
+        display: none;
+    }
+    /* can  */
+    .can .can-content h2 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .can .img {
+        margin-bottom: 60px;
+    }
 }
 /******************************* 
 responsive mobile area ends here  
