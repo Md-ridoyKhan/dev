@@ -1,0 +1,189 @@
+/************************** 
+responsive mobile area here  
+***************************/
+/* 767px -xl- Extra large device area here  */
+@media screen and (max-width: 1366px){
+    /* index.html  */
+    /* banner area here   */
+    /* .bannerWrap {
+        background-size: 700px;
+        padding: 200px 0px;
+    } */
+    .bannerAgency-content .content h2 {
+        font-size: 40px;
+        padding-bottom: 10px;
+        line-height: 47px;
+    }
+    /* service area here  */
+    .servicewrap > img {
+        right: 0;
+    }
+    /* youCan area here  */
+    .youCanWrap > img {
+        left: 0;
+    }
+}
+@media screen and (min-width: 1200px){
+    .container{
+        max-width: 1110px;
+    }
+}
+/* 991px -lg- Large device area here  */
+@media screen and (max-width: 992px){
+    /* index.html  */
+    /* youCan area here  */
+    .youCanImg {
+        padding-bottom: 40px;
+    }
+    /* vedio area here  */
+    .vedioRow {
+        display: flex;
+        justify-content: center;
+    }
+    .vedioArea .vedio {
+        justify-content: center;
+    }
+    .vedioContent {
+        position: relative;
+        margin-top: 0;
+        margin-bottom: 70px;
+    }
+    /* footer area here  */
+    .footer-content {
+        margin-bottom: 80px;
+    }
+}
+/* 767px -md- Medium device area here  */
+@media screen and (max-width: 768px){
+    /* index.html  */
+    /* header area here  */
+    .header-menu nav {
+        display: none;
+    }
+    .header-menu #mobileMenu{
+        display: flex;
+        align-items: center;
+    }
+    .slicknav_menu {
+        background: none;
+    }
+    .slicknav_nav {
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        background-color: #2b2e3d;
+        z-index: 100;
+    }
+    .slicknav_menu .slicknav_menutxt {
+        display: none;
+    }
+    .slicknav_menu .slicknav_icon {
+        margin: 0;
+    }
+    .slicknav_btn {
+        margin: 0;
+        background-color: #ff845a;
+    }
+    .slicknav_nav .slicknav_arrow {
+        display: none;
+    }
+    .slicknav_nav li, .slicknav_nav ul {
+        display: block;
+        line-height: 50px;
+        text-align: center;
+    }
+    .slicknav_nav a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 20px;
+        font-weight: bold;
+        text-transform: capitalize;
+        letter-spacing: 0.5px;
+    }
+    .slicknav_menu, .slicknav_menu * {
+        color: #fff;
+    }
+    /* banner area here  */
+    .graphAll{
+        display: none;
+    }
+    /* portfolio area here  */
+    .Port-Img-Left {
+        padding-bottom: 30px;
+    }
+}
+/* 576px -sm- Small device area here  */
+@media screen and (max-width: 576px){
+     /* index.html  */
+    /* banner area here  */
+    /* .bannerWrap {
+        background-size: 700px;
+        padding: 78px 0px;
+    }
+    .bannerAgency {
+        padding: 0px;
+    } */
+    .bannerAgency-content .content h2 {
+        font-size: 30px;
+        padding-bottom: 5px;
+        line-height: 38px;
+    }
+
+
+
+    /* service area here  */
+    .service-title .title h2 {
+        font-size: 26px;
+        line-height: 38px;
+    }
+    .service-title .logo {
+        display: block;
+    }
+    /* vedio area here  */
+    .vedioArea {
+        padding-bottom: 70px;
+    }
+    .vedioContent {
+        height: auto;
+        display: inline-block;
+        background-image: none;
+        margin-bottom: 0;
+    }
+    .vedioContent ul {
+        margin-top: 0;
+    }
+    .vedioContent::after {
+        background-image: none;
+    }
+    .vedioContent ul li h2 {
+        letter-spacing: 1px;
+        color: #2b2e3d;
+    }
+    .vedioContent ul li h2 span {
+        color: #2b2e3d;
+    }
+    .vedioContent ul li p {
+        font-size: 20px;
+        letter-spacing: 1px;
+        color: #2b2e3d;
+    }
+    /* portfolio area here  */
+    .portNav ul li a {
+        font-size: 22px;
+    }
+    .Port-Img-Left .content h2, .port-Img-Right .content h2 {
+        font-size: 26px;
+    }
+    .Port-Img-Left .content p, .port-Img-Right .content p {
+        font-size: 14px;
+    }
+    /* get area here  */
+    .get-card {
+        padding: 0px 15px;
+    }
+
+}
+/******************************* 
+responsive mobile area ends here  
+********************************/

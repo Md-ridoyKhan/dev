@@ -1,0 +1,160 @@
+/* 
+--------------------------
+- 1.1 Default CSS
+--------------------------
+*/
+
+/*google font*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Exo:100,200,300,400,500,600,700,800,900|Poppins:100,300,400,500,600,700,900&display=swap');
+
+/* Your default CSS. */
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    color: #2b2e3d;
+    /* overflow: hidden; */
+}
+
+/* .clear {
+    clear: both
+} */
+
+
+
+
+
+/*
+Table Of Contents
+=========================
+- Default Typography
+- Custom Typography
+=========================
+*/
+
+
+/*
+--------------------------
+- Default Typography
+--------------------------
+*/
+
+/*
+font-family: 'Poppins', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Exo', sans-serif;
+*/
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    color: #2b2e3d;
+    letter-spacing: 0px;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    font-weight: inherit;
+    font-family: 'Open Sans', sans-serif;
+    transition: all .4s ease-in-out 0s;
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 70px;
+    letter-spacing: 1px;
+    margin-bottom: 0px;
+}
+
+h2 {
+    /* font-size: 22px;
+    line-height: 24px; */
+    margin-bottom: 0px;
+    color: #2b2e3d;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 0px;
+}
+
+h4 {
+    font-size: 20px;
+    line-height: 27px;
+}
+
+h5 {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+h6 {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: 0;
+    line-height: 28px;
+    margin: 0;
+    color: #2b2e3d;
+}
+
+p img {
+    margin: 0;
+}
+
+span {
+    font-family: 'Poppins', sans-serif;
+}
+.row{
+    margin-left: 0;
+    margin-right: 0;
+}
+ul{
+    margin-bottom: 0;
+    padding-left: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+
+.button a {
+    background-color: #ff845a;
+    display: inline-block;
+    padding: 16px 22px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0;
+    text-transform: capitalize;
+    color: #ffffff;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    margin-right: 16px;
+    margin-bottom: 18px;
+}

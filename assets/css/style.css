@@ -1,0 +1,780 @@
+/* header area here  */
+.header{
+    background-color: #ffede6;
+    height: 100px;
+    line-height: 100px;
+    transition: all 0.3s ease;
+}
+.header.sticky{
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    z-index: 10;
+}
+.header-menu {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.header-menu label.logo{
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #ff845a;
+    display: inline;
+}
+.header-menu nav {
+    display: inline;
+}
+.header-menu nav ul.nav-menu {
+    display: inline;
+}
+.header-menu nav ul.nav-menu > li {
+    display: inline-block;
+    margin: 0px 10px;
+    position: relative;
+    line-height: 100px;
+}
+.header-menu nav ul.nav-menu > li a {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+    color: #2b2e3d;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+.header-menu nav ul.nav-menu > li a:hover {
+    color: #ff845a;
+}
+.header-menu nav ul.nav-menu > li > a.active {
+    color: #ff845a;
+}
+.header-menu nav ul.nav-menu > li a span{}
+.header-menu nav ul li ul.sub-menu {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    min-width: 180px;
+    background: #ffede6;
+    z-index: 1;
+    line-height: 52px;
+    padding: 0px 20px 0px;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    transform-origin: top;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+.header-menu > nav > ul > li:hover>.sub-menu {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+}
+.header-menu nav ul li ul.sub-menu li{
+    display: block;
+}
+.header-menu nav ul li ul.sub-menu li a{}
+.header-menu .seacrh {
+    display: inline;
+}
+.header-menu .seacrh img {
+    width: 22px;
+}
+.header-menu #mobileMenu{
+    display: none;
+}
+
+/* banner area here  */
+.bannerAgency {
+    max-width: 100%;
+    height: 100vh;
+    background-color: #ffede6;
+}
+.bannerWrap {
+    max-width: 1400px;
+    margin: 0 auto;
+    height: 100vh;
+    background: url("../images/bg/home-banner.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: left;
+    position: relative;
+}
+.bannerWrap .graphCircel1 {
+    position: absolute;
+    width: 160px;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+.bannerWrap .graphAngle1 {
+    position: absolute;
+    width: 160px;
+    right: 0;
+    bottom: 168px;
+    z-index: 1;
+}
+.bannerAgency-content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.bannerAgency-content .content h2 {
+    font-size: 46px;
+    font-weight: bold;
+    text-transform: capitalize;
+    padding-bottom: 18px;
+    color: #2b2e3d;
+    line-height: 57px;
+}
+.bannerAgency-content .content h2 span{
+    color: #ff845a;
+}
+.bannerAgency-content .content p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #2b2e3d;
+    padding-top: 10px;
+    padding-bottom: 26px;
+}
+/* service area here*/
+.service{}
+.servicewrap{
+    position: relative;
+}
+.servicewrap > img {
+    position: absolute;
+    top: 186px;
+    right: 80px;
+    width: 160px;
+    z-index: -1;
+}
+.service-title {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 80px 15px;
+    display: flex;
+}
+.service-title .logo {
+    margin-right: 22px;
+    display: flex;
+    align-items: center;
+}
+.service-title .logo img {
+    width: 80px;
+}
+.service-title .title {
+    display: inline-block;
+}
+.service-title .title h2 {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #2b2e3d;
+    line-height: 50px;
+}
+.serviceCard {
+    border: 1px solid #e1e1e1;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+.serviceCard:hover{
+    background: #ff845a;
+}
+.serviceCard:hover .content h2,.serviceCard:hover .content p,.serviceCard:hover .icon span {
+    color: #fff;
+    transition: all 0.4s ease;
+}
+.serviceCard .logo {
+    margin-top: 20px;
+}
+.serviceCard .logo img {
+    width: 100px;
+}
+.serviceCard .content{}
+.serviceCard .content h2 {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px 0px 20px;
+    color: #2b2e3d;
+}
+.serviceCard .content p {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0px 15px 25px;
+    color: #2b2e3d;
+}
+.serviceCard .icon {
+    position: relative;
+    max-width: 100%;
+}
+.serviceCard .icon img {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+.serviceCard .icon a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.serviceCard .icon a span {
+    font-size: 60px;
+    font-weight: 400;
+    color: #2b2e3d;
+}
+/* youCan area here  */
+.youCan {
+    padding-top: 80px;
+}
+.youCanWrap{
+    position: relative;
+}
+.youCanWrap > img {
+    position: absolute;
+    left: 3%;
+    bottom: 0;
+    width: 160px;
+    z-index: -1;
+}
+.youCanContent{}
+.youCanContent .title {
+    max-width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.youCanContent .title img {
+    width: 80px;
+}
+.youCanContent .title h2 {
+    position: absolute;
+    font-size: 24px;
+    font-weight: bold;
+}
+.youCanContent .content{}
+.youCanContent .content h2 {
+    font-size: 38px;
+    font-weight: bold;
+    padding: 10px 0px 24px;
+    line-height: 50px;
+}
+.youCanContent .content p {
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+.youCanContent .content .button{
+    margin-top: 20px;
+}
+.youCanContent .content .button a{
+    margin: 0;
+}
+.youCanImg {
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.youCanImg img{
+    width: 100%;
+}
+
+/* vedio area here  */
+.vedioArea {
+    width: 100%;
+    position: relative;
+    background: url("../images/bg/videoBanner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    margin: 150px 0px 100px;
+}
+.vedioRow{
+    position: relative;
+}
+.vedioArea::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("../images/overlay/vedioOverlay.png");
+    top: 0%;
+    left: 0;
+    z-index: -1;
+}
+.vedioArea .vedio {
+    padding: 220px 0px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.vedioArea .vedio a {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #ff845a;
+    font-size: 24px;
+}
+.vedioArea .vedio a::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    border: 3px solid #ff845a;
+    animation: spin 1000ms linear infinite;
+    z-index: 3;
+}
+.vedioArea .vedio a i {
+    color: #ffffff;
+}
+
+@keyframes spin {
+    0% {
+        opacity: 1;
+        transform: scale(1.0);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1.5);
+    }
+}
+.vedioContent {
+    background: url("../images/overlay/videoImgLeft.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    width: 560px;
+    height: 560px;
+    position: absolute;
+    z-index: 12;
+    top: 0;
+    right: 0;
+    margin-top: -67px;
+    display: flex;
+    align-items: center;
+}
+.vedioContent::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background: url("../images//overlay/vedioOverlayLeft.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+.vedioContent ul {
+    position: relative;
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 92px;
+}
+.vedioContent ul li {
+    text-align: center;
+    margin: 17px 10px;
+}
+.vedioContent ul li h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.vedioContent ul li h2 span{
+    color: #fff;
+}
+.vedioContent ul li p {
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 0.5px;
+    padding-top: 13px;
+}
+
+
+
+
+/* portfolio area here  */
+.portfolioArea{
+    padding: 10px 0px 100px;
+    overflow: hidden;
+}
+
+
+.portfolioWrap{}
+.portNav{}
+.portNav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.portNav ul li {
+    display: inline-block;
+    margin: 12px 24px;
+}
+.portNav ul li a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2b2e3d;
+    text-transform: capitalize;
+    position: relative;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+.portNav ul li a.active {
+    color: #ff845a;
+}
+.portNav ul li a:hover{
+    color: #ff845a;
+}
+.portNav ul li a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background: #2b2e3d;
+    bottom: -4px;
+    left: 0;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+.portNav ul li a:hover::before{
+    width: 100%;
+    background: #ff845a;
+}
+.portNav ul li:first-child > a::before {
+    background: #ff845a;
+}
+/* card  */
+.Port-Img-Left, .port-Img-Right{
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+.Port-Img-Left img{
+    width: 100%;
+    height: auto;
+}
+.Port-Img-Left .content, .port-Img-Right .content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: -100%;
+    background: rgba(255, 132, 90, .7);
+    transition: all 0.4s ease;
+}
+.Port-Img-Left:hover .content, .port-Img-Right:hover .content{
+    left: 0;
+}
+.port-Img-Right img{
+    width: 100%;
+    height: 100%;
+}
+
+.Port-Img-Left{}
+.Port-Img-Left .content, .port-Img-Right .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Port-Img-Left .content i, .port-Img-Right .content i{
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+}
+.Port-Img-Left .content h2, .port-Img-Right .content h2{
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #fff;
+    letter-spacing: 1px;
+    padding: 20px 0px 10px;
+}
+.Port-Img-Left .content p, .port-Img-Right .content p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+
+.portfolioWrap .container{
+    position: relative;
+}
+.portfolioWrap .container .graph img {
+    position: absolute;
+    width: 160px;
+    top: 28%;
+    right: -52px;
+}
+
+
+
+/* owl carousel area here  */
+
+.owlArea {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 100px;
+    background: #FFEDE6;
+    z-index: 0;
+}
+.owlArea .graph {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.owlArea .graph img{
+    width: 1000px;
+}
+.owlArea .owl-title {
+    padding: 130px 15px 80px;
+    max-width: 630px;
+    margin: 0 auto;
+    text-align: center;
+}
+.owlArea .owl-title p {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: 0px;
+    color: #ff845a;
+}
+.owlArea .owl-title h2 {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 50px;
+    padding-top: 10px;
+    color: #2b2e3d;
+}
+.our-owl-item{}
+.our-owl-item .item {
+    position: relative;
+}
+.our-owl-item .item img {
+    width: 100%;
+}
+.our-owl-item .item .effect {
+    position: absolute;
+    left: 0;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background: rgba(255, 132, 90, .7);
+    transition: all 0.5s ease;
+}
+.our-owl-item .item:hover .effect{
+    top: 0;
+}
+.our-owl-item .item .effect h2 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.our-owl-item .item .effect p {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    padding: 6px 0px 0px;
+}
+.our-owl-item .item .effect ul{}
+.our-owl-item .item .effect ul li {
+    display: inline-block;
+    margin: 10px;
+}
+.our-owl-item .item .effect ul li:hover a i {
+    color: #2b2e3d;
+}
+.our-owl-item .item .effect ul li a{}
+.our-owl-item .item .effect ul li a i {
+    color: #fff;
+    font-size: 24px;
+}
+.owl-theme .owl-nav.disabled+.owl-dots {
+    margin-top: 50px;
+}
+.owl-theme .owl-dots .owl-dot.active span{
+    background: #ff845a;
+    width: 50px;
+}
+.owl-theme .owl-dots .owl-dot span {
+    width: 30px;
+    height: 10px;
+    margin: 5px 4px;
+    background: #ff845a;
+    border-radius: 0px;
+}
+/* owl carousel area ends here  */
+
+
+
+/* get area here */
+.getArea {
+    padding-bottom: 120px;
+}
+.getArea .container{
+    position: relative;
+}
+.getArea .graph {
+    position: absolute;
+    top: 26%;
+    left: -48px;
+    z-index: -1;
+}
+.getArea .graph img{
+    width: 160px;
+}
+.get-padding{
+    padding: 0px 15px;
+}
+.get-card {
+    position: relative;
+    overflow: hidden;
+}
+.get-card:hover .effect{
+    left: 0;
+}
+.get-card > img {
+    width: 100%;
+}
+.get-card .effect {
+    background: rgba(255, 132, 90, .7);
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+.get-card .effect a{}
+.get-card .effect a img {
+    width: 60px;
+}
+/* get area ends here */
+
+
+
+/* footer area here  */
+footer{
+    background: url("../images/bg/footerSection.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 160px 0px;
+}
+.footer-content{}
+.footer-content > ul{}
+.footer-content > ul li{}
+.footer-content > ul li h2, .footer-input ul li h2{
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    padding-bottom: 40px;
+}
+.footer-content > ul li a {
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    transition: all 0.5s ease;
+    display: block;
+    margin: 16px 0px;
+}
+.footer-content > ul:first-child li a{
+    margin-top: 0px;
+}
+.footer-content > ul li a:hover{
+    color: #ff845a;
+}
+.footer-input{}
+.footer-input ul{}
+.footer-input ul li{}
+.footer-input ul li p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+}
+.footer-input ul li.input {
+    position: relative;
+    overflow: hidden;
+    margin-top: 24px;
+}
+.footer-input ul li.input input {
+    width: 100%;
+    padding: 20px 76px 20px 20px;
+    font-size: 14px;
+    text-transform: capitalize;
+    outline: none;
+    background: #6D707F;
+    border: 2px solid #6D707F;
+}
+.footer-input ul li.input input::placeholder {
+    color: #fff;
+}
+.footer-input ul li.input .input-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #ff845a;
+    height: 100%;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.footer-input ul li.input .input-icon i {
+    color: #fff;
+    font-size: 26px;
+}
+.footer-input ul li.icon{}
+.footer-input ul li.icon ul{
+    margin-top: 40px;
+}
+.footer-input ul li.icon ul li{
+    display: inline-block;
+}
+.footer-input ul li.icon ul li a i {
+    color: #fff;
+    font-size: 18px;
+    margin-right: 18px;
+    transition: all 0.5s ease;
+}
+.footer-input ul li.icon ul li a:hover i{
+    color: #ff845a;
+    transform: rotate(360deg);
+}
+/* footer area ends here  */
