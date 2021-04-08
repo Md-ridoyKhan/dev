@@ -5,9 +5,7 @@ responsive mobile area here
 @media screen and (max-width: 1366px){
     /* index.html  */
     /* banner area here   */
-    .bannerAgency-content {
-        /* padding: 200px 0px 166px; */
-    }
+    .bannerAgency-content {}
     .bannerWrap {
         background-size: 700px;
     }
@@ -17,19 +15,23 @@ responsive mobile area here
         line-height: 47px;
     }
     /* service area here  */
-    .servicewrap > img {
+    .servicewrap .circel {
         right: 0;
     }
     /* youCan area here  */
-    .youCanWrap > img {
+    .youCanWrap .circel{
         left: 0;
     }
-    
     /* about.html */
     /* .banner  */
     .banner .container .circel {
         position: absolute;
         right: 0;
+    }
+    /* service.html  */
+    /* service area here  */
+    .service .angle {
+        left: 0px;
     }
 }
 @media screen and (min-width: 1200px){
@@ -46,6 +48,10 @@ responsive mobile area here
 }
 /* 991px -lg- Large device area here  */
 @media screen and (max-width: 992px){
+    /* graph display none  */
+    .circel, .angle{
+        display: none;
+    }
     /* index.html  */
     /* youCan area here  */
     .youCanImg {
@@ -67,6 +73,23 @@ responsive mobile area here
     /* footer area here  */
     .footer-content {
         margin-bottom: 60px;
+    }
+    /* portfolio.index  */
+    /* portfolio section  */
+    .portfolio .img img {
+        padding: 10px 0px;
+        width: 100% !important;
+    }
+    /* blogOne-html  */
+    /* blog area  */
+    .blog-item {
+        margin-bottom: 80px;
+        padding-right: 0px;
+    }
+    /* contact form index.area here  */
+    /* contact form  */
+    .contact-item .form-group1 {
+        grid-template-columns: auto;
     }
 }
 /* 767px -md- Medium device area here  */
@@ -128,34 +151,44 @@ responsive mobile area here
     .Port-Img-Left {
         padding-bottom: 30px;
     }
+    /* portfolio.index  */
+    /* portfolio section  */
+    .portfolio .nav {
+        margin-bottom: 80px;
+    }
+    
+    .details .share .icon ul li a i {
+        font-size: 12px;
+    }
+    .details .share .icon ul li a img {
+        width: 12px;
+    }
+    .details .share ul.s-like li a {
+        font-size: 12px;
+    }
+    /* contact form index.area here  */
+    /* contact form  */
+    .contact-item {
+        padding: 80px 80px;
+    }
 }
 /* 576px -sm- Small device area here  */
 @media screen and (max-width: 576px){
      /* index.html  */
     /* banner area here  */
     .bannerWrap {
-        /* background-size: 700px;
-        padding: 78px 0px; */
-    }
-    .bannerAgency {
-        /* padding: 0px; */
-    }
-    /* .bannerAgency-content .content h2 {
-        font-size: 30px;
-        padding-bottom: 5px;
-        line-height: 38px;
-    }
-
-    .bannerAgency-content {
-        padding: 94px 0px 225px;
-    } */
-    .bannerWrap {
         padding: 106px 0px;
+    }
+    .bannerAgency-content .button a {
+        margin-bottom: 18px;
     }
     /* service area here  */
     .service-title .title h2 {
         font-size: 26px;
         line-height: 38px;
+    }
+    .serviceCard .content h2 {
+        font-size: 26px;
     }
     .service-title .logo {
         display: block;
@@ -202,7 +235,6 @@ responsive mobile area here
     .get-card {
         padding: 0px 15px;
     }
-
     /* about.html */
     /* .banner  */
     .banner .container img{
@@ -215,6 +247,76 @@ responsive mobile area here
     }
     .can .img {
         margin-bottom: 60px;
+    }
+    /* blogOne-html  */
+    /* blog area  */
+    .date-like div.date a, .date-like ul.like li a, .creative ul.content li h2, .category table tr td, .blog-items .contents p {
+        font-size: 17px;
+    }
+    .date-like {
+        display: inline-block;
+        line-height: 40px;
+        margin-top: 26px;
+    }
+    .date-like ul.like {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .date-like ul.like li {
+        margin-right: 20px;
+        margin-left: 0px;
+    }
+    .blog-items .contents h2 {
+        padding: 20px 0px 20px;
+    }
+    .details > .title h2 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .details .share {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0px 15px;
+    }
+    .details .share .icon label {
+        font-size: 16px;
+    }
+    .details .share .icon ul {
+        margin-left: 10px;
+    }
+    .details .share ul.s-like li {
+        margin-left: 0px;
+        margin-right: 10px;
+    }
+    .comments {
+        display: block;
+    }
+    .comments .img {
+        padding-bottom: 40px;
+    }
+    .comments .content {
+        margin-left: 0;
+    }
+    .comments .content ul {
+        margin: 10px 0px 20px;
+    }
+    .comments .content ul li a {
+        font-size: 11px;
+    }
+    .blog-form form div.form-group {
+        display: block;
+        margin-bottom: 0;
+    }
+    .blog-form form div.form-group input {
+        width: 100%;
+        letter-spacing: 1px;
+        margin-bottom: 3%;
+    }
+    /* contact form index.area here  */
+    /* contact form  */
+    .contact-item {
+        padding: 80px 15px;
     }
 }
 /******************************* 
